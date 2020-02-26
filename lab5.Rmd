@@ -1,0 +1,78 @@
+---
+title: "lab5"
+author: "Oladele A. OLUWAYIOSE"
+date: "2/19/2020"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+
+```{r,  echo=FALSE}
+download.file(url="https://ndownloader.figshare.com/files/2292169",
+             destfile = "data/portal_data_joined.csv")
+```
+
+```{r,  echo=FALSE}
+library(tidyverse)
+surveys <- read_csv("data/portal_data_joined.csv")
+```
+
+
+```{r}
+SNP_table <- read.table("23andMe_complete.txt", header = TRUE, sep = "\t")
+head(SNP_table)
+```
+
+
+Exercise 1
+Subset (select) the 23andMe Complete table to just position and genotype
+```{r}
+names(SNP_table)
+df1<- select(SNP_table, c(position, genotype))
+head(df1)
+```
+
+Exercise 2
+Filter to just the MT chromosome and remove genotypes A and T. (you can use != to remove).
+
+```{r}
+table(SNP_table$chromosome)
+df2<- filter(SNP_table, chromosome=="MT" & genotype != "A" & genotype != "T")
+
+table(df2$genotype)
+head(df2)
+```
+
+Exercise 3
+Use group_by() and summarize() to find the min positon, max position and total number of positions for each chromosomes.
+
+```{r}
+mini<- SNP_table %>% group_by(chromosome) %>% summarise(minim = min(position), 
+                      maxim= max(position), total=length(position))
+mini
+```
+
+Exercise 4
+Building on ex3 create using mutate a new column with the density of SNPs for each chromosome based the total number of SNPs divided by the max position - min position
+
+```{r}
+dens<- mini %>% mutate(SNP_density= total/(maxim-minim))
+dens
+
+```
+
+Exercise 5
+Building on ex3 sort chromosomes based on SNP density.
+
+```{r}
+dens_sorted <- dens %>%  arrange(desc(SNP_density))
+dens_sorted
+```
+
+Exercise 6
+Export the above table as a csv file to your data directory (There will be no results except the code to show me). However you will get an error when knitting if the code is not correct.
+```{r}
+write.csv(dens_sorted, "final_data_sorted.csv")
+```
+
