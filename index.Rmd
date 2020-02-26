@@ -4,5 +4,6 @@ author: "Oladele A. OLUWAYIOSE"
 date: "2/26/2020"
 output: html_document
 ---
-
+This is my new website!
+#Note: After each modification, always knit first before it becomes available for commit
 *[This is my lab5](lab5.Rmd)
