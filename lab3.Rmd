@@ -1,0 +1,72 @@
+---
+title: "lab3"
+author: "Oladele A. OLUWAYIOSE"
+date: "2/1l/2020"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+library(ggplot2)
+```
+
+#Exercise 1
+#Using ggplot make a bar graph of the total SNP counts for each chromosome.
+
+```{r}
+SNP_table <- read.table("23andMe_complete.txt", header = TRUE, sep = "\t")
+head(SNP_table)
+```
+
+
+#Exercise 2
+#Order the chromosomes according to number by converting chromosomes
+#from a factor to a order factor as in the example above.
+#Then replot the bar graph
+```{r}
+
+str(SNP_table)
+SNP_table$chromosome = ordered(SNP_table$chromosome, levels=c(seq(1, 22), "X", "Y", "MT"))
+summary(SNP_table$chromosome)
+
+ggplot(SNP_table, aes(chromosome)) + geom_bar() + ylab ("SNP counts")
+```
+
+#Exercise 3
+#Show the contribution of each genotype to the chromosome count using
+#a stacked bar graph (with the fill = genotype)
+
+```{r}
+ggplot(SNP_table, aes(chromosome, fill = genotype)) +
+  geom_bar() + ylab ("SNP counts") + theme_bw()
+```
+
+
+#Exercise 4
+#Make each set of stacked bars the same height to easier to compare
+#proportions across groups.
+
+```{r}
+ggplot(SNP_table, aes(chromosome, fill = genotype)) +
+  geom_bar(position = "fill") + ylab ("SNP counts")+ theme_bw() 
+```
+
+
+#Exercise 5
+#Now place genotypes directly beside one another for each chromosome to compare individual values.
+
+
+```{r}
+ggplot(SNP_table, aes(chromosome, fill = genotype)) +
+  geom_bar(position = "dodge") + ylab ("SNP counts")+ theme_bw() 
+```
+
+
+#Exercise 6
+#The above graph is pretty hard to read. Try using facet_wrap with the genotype
+```{r}
+ggplot(SNP_table, aes(chromosome, fill = genotype)) +
+  geom_bar(position = "dodge") + ylab ("SNP counts")+ theme_bw() + facet_wrap(~genotype)
+```
+

@@ -1,0 +1,36 @@
+---
+title: "lab1"
+author: "Oladele A. OLUWAYIOSE"
+date: "3/4/2020"
+output: html_document
+---
+
+```{r}
+##Exercise 1: For x = 2 and y = 8, compute the sum, difference, product and quotient of x and y
+x= 2
+y = 8
+x+y
+x-y
+x*y
+x/y
+```
+
+```{r}
+##Exercise 2 For x = 3.5 and y = 5, Test x^5 is greater than y^4 and return a logical value
+x = 3.5
+y = 5
+x^5>y^4 
+```
+
+```{r}
+#Exercise 3 Create a vector of the values 211, 62, 108, 43 and 129. Determine the sum of the vector. Divide each value in the vector by the sum to determine relate frequency.
+num_vec<- c(211, 62, 108, 43, 129)
+sum(num_vec)
+```
+
+```{r}
+#Exercise 4 Create a vector of the nucleotides A, T, C and G. Sort the vector.
+nuc_vec<- c("A", "T", "C", "G")
+sort(nuc_vec)
+```
+

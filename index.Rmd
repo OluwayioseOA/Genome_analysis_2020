@@ -3,7 +3,31 @@ title: "index"
 author: "Oladele A. OLUWAYIOSE"
 date: "2/26/2020"
 output: html_document
+bibliography: data/references.bib
 ---
-This is my new website!
+Hey, here is my new website!
+
+Information here majorly contains reports of exciting activities in my Human Genomic Class (Spring 2020).
+
+Instructor: Prof. Jeffrey Blanchard.
+
+```{r, echo=FALSE}
 #Note: After each modification, always knit first before it becomes available for commit
-*[This is my lab5](lab5.Rmd)
+
+##Add one of the references from ref.bib file as well as add labs1:5 html files
+```
+LAB REPORTS: 
+
+*[lab1 report](lab1.html) [@RCoreTeam] 
+
+*[lab2 report](lab2_report.html)
+
+*[lab3 report](lab3.html) [@Chang2015]
+
+*[lab4 report](lab4.html)
+
+*[lab5 report](lab5.html)  [@Peters]
+
+
+##References
+
