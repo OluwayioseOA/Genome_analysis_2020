@@ -1,0 +1,13 @@
+---
+title: "lab6"
+author: "Oladele A. OLUWAYIOSE"
+date: "3/4/2020"
+output: html_document
+---
+
+```{r}
+
+
+```
+
+

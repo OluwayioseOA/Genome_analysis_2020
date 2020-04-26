@@ -1,0 +1,62 @@
+---
+title: "labA"
+author: "Oladele A. OLUWAYIOSE"
+date: "3/11/2020"
+output: html_document
+---
+
+```{r, eval=FALSE}
+
+1   Genome_analysis_2020.Rproj      draft.txt.save.1                lab4.html
+     2  LICENSE                         index.Rmd                       lab5.Rmd
+     3  Lab3_HuGen_2020_tutorial.Rmd    index.html                      lab5.html
+     4  MYDRAFTS                        lab1.R                          lab6_rnaseq.Rmd
+     5  README.md                       lab1.Rmd                        lab7_rnaseq.Rmd
+     6  SNP_plot.png                    lab1.html                       paper.Rmd
+     7  airway                          lab2.R                          paper.html
+     8  airway_1.6.0.tar.gz             lab2_report.Rmd                 rnaseqGene.R
+     9  coldata                         lab2_report.html                test.sh
+    10  data                            lab3.Rmd                        tximeta_1.5.27.tar.gz
+    11  draft.txt                       lab3.html
+    12  draft.txt.save                  lab4.Rmd
+    13  1x-nat-vl931-172-30-189-179:Genome_analysis_2020 oladeleoluwayiose$ cp draft.txt draft.txt_new
+    14  1x-nat-vl931-172-30-189-179:Genome_analysis_2020 oladeleoluwayiose$ ls
+    15  Genome_analysis_2020.Rproj      draft.txt.save.1                lab4.Rmd
+    16  LICENSE                         draft.txt_new                   lab4.html
+    17  Lab3_HuGen_2020_tutorial.Rmd    index.Rmd                       lab5.Rmd
+    18  MYDRAFTS                        index.html                      lab5.html
+    19  README.md                       lab1.R                          lab6_rnaseq.Rmd
+    20  SNP_plot.png                    lab1.Rmd                        lab7_rnaseq.Rmd
+    21  airway                          lab1.html                       paper.Rmd
+    22  airway_1.6.0.tar.gz             lab2.R                          paper.html
+    23  coldata                         lab2_report.Rmd                 rnaseqGene.R
+    24  data                            lab2_report.html                test.sh
+    25  draft.txt                       lab3.Rmd                        tximeta_1.5.27.tar.gz
+    26  draft.txt.save                  lab3.html
+    27  1x-nat-vl931-172-30-189-179:Genome_analysis_2020 oladeleoluwayiose$ mv draft.txt_new MYDRAFTS/
+    28  1x-nat-vl931-172-30-189-179:Genome_analysis_2020 oladeleoluwayiose$ cd MYDRAFTS/
+    29  1x-nat-vl931-172-30-189-179:MYDRAFTS oladeleoluwayiose$ ls
+    30  draft.txt.save  draft.txt_new
+    31  1x-nat-vl931-172-30-189-179:MYDRAFTS oladeleoluwayiose$ rm draft.txt.save
+    32  1x-nat-vl931-172-30-189-179:MYDRAFTS oladeleoluwayiose$ ls -a
+    33  .               ..              draft.txt_new
+    34  1x-nat-vl931-172-30-189-179:MYDRAFTS oladeleoluwayiose$ rm draft.txt_new
+    35  1x-nat-vl931-172-30-189-179:MYDRAFTS oladeleoluwayiose$ cd ..
+    36  1x-nat-vl931-172-30-189-179:Genome_analysis_2020 oladeleoluwayiose$ rm -r MYDRAFTS/
+    37  1x-nat-vl931-172-30-189-179:Genome_analysis_2020 oladeleoluwayiose$ ls -a
+    38  .                               airway_1.6.0.tar.gz             lab3.Rmd
+    39  ..                              coldata                         lab3.html
+    40  .DS_Store                       data                            lab4.Rmd
+    41  .RData                          draft.txt                       lab4.html
+    42  .Rhistory                       draft.txt.save                  lab5.Rmd
+    43  .Rproj.user                     draft.txt.save.1                lab5.html
+    44  .git                            index.Rmd                       lab6_rnaseq.Rmd
+    45  .gitignore                      index.html                      lab7_rnaseq.Rmd
+    46  Genome_analysis_2020.Rproj      lab1.R                          paper.Rmd
+    47  LICENSE                         lab1.Rmd                        paper.html
+    48  Lab3_HuGen_2020_tutorial.Rmd    lab1.html                       rnaseqGene.R
+    49  README.md                       lab2.R                          test.sh
+    50  SNP_plot.png                    lab2_report.Rmd                 tximeta_1.5.27.tar.gz
+    51  airway                          lab2_report.html
+    52  1x-nat-vl931-172-30-189-179:Genome_analysis_2020 oladeleoluwayiose$1x-nat-vl931-172-30-189-179:Genome_analysis_2020 oladeleoluwayiose$
+```

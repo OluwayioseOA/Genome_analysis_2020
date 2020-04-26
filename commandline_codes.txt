@@ -1,0 +1,17 @@
+These are few command line codes for record purpose(03/10/2020)
+Note: Directory is the same as folder
+pwd: to check existing directory
+mkdir: creates a new directory or folder
+cd: changing directory
+cd ..: go back one directory up
+ls or ls -a or ls -la or ls -lh :lists content of directory
+rm : to remove files in a directory
+rm -r: to remove directory itself
+mv: move file or directory.
+nl or cat or head or tail: for reading files in command line
+ 
+nano: for creating a text/word/csv file in a directory
+To save your text, copy your command code, go to file menu, click new file, navigate to text file. paste and save as .sh. 
+
+
+
